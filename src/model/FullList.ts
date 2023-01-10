@@ -12,8 +12,8 @@ interface List {
 export default class FullList implements List {
   static instance: FullList = new FullList();
 
-  // singleton - one instance of the class created
-  private constructor(private _list: ListItem[] = []) { }
+  // singleton - one instance of this class created
+  private constructor(private _list: ListItem[] = []) {}
 
   get list() {
     return this._list;
